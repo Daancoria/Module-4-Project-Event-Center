@@ -1,0 +1,218 @@
+/* Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+/* New styles for logo banner */
+.logo-banner {
+    width: 150px; /* Set width for logo size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the logo round if desired */
+    margin-bottom: 20px;
+}
+
+/* New styles for welcome message */
+.welcome {
+    margin-bottom: 20px;
+}
+
+/* New styles for about us section */
+.about-us {
+    margin-bottom: 20px;
+}
+
+/* New styles for featured section */
+.featured {
+    margin-bottom: 20px;
+}
+
+.featured .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.featured .btn:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+/* Styles for centering content in location*/
+.centered-content {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+thead th {
+    border-color: #333;
+}
+
+/* New styles for table in menu.html */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #add8e6; /* Light blue background */
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 8px;
+    background-color: #add8e6; /* Apply light blue to all cells */
+    color: #000; /* Ensure all cell text is black */
+}
+
+thead th {
+    color: #000; /* Ensure table heading font color is black */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #add8e6; /* Keep light blue for even rows */
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+thead {
+    background-color: #add8e6; /* Light blue for table heading */
+}
+
+thead th {
+    border-color: #333;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .centered-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav {
+        font-size: 1.2em;
+    }
+}
+
+/* Medium devices */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .centered-content {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    nav {
+        font-size: 1.1em;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+    .centered-content {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    nav {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
